@@ -50,16 +50,39 @@ document.querySelectorAll('.diffs__grid').forEach(grid => {
 });
 
 // --- FORM SUBMIT ---
+const SHEET_WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbwzYsPGQOB_9z5lnKr1_w0ibFLWSY-lYX_tTTvJCT6xNrUSi-aum1Zuza69mdGmV1Ft/exec';
+
 const form = document.getElementById('contactForm');
 if (form) {
+  const submitBtn = form.querySelector('button[type="submit"]');
+  const submitBtnDefaultHTML = submitBtn ? submitBtn.innerHTML : '';
+
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     const data = Object.fromEntries(new FormData(form).entries());
-    const msg  = encodeURIComponent(
-      `Olá, vim pelo site da Belbi!\n\nNome: ${data.name}\nEmpresa: ${data.company}\nE-mail: ${data.email}\nTelefone: ${data.phone || '—'}\n\nMensagem: ${data.message || '—'}`
-    );
-    window.open(`https://wa.me/5511979683347?text=${msg}`, '_blank');
-    form.reset();
+
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Enviando...';
+    }
+
+    fetch(SHEET_WEBHOOK_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'text/plain' },
+      body: JSON.stringify(data)
+    })
+      .catch(() => {})
+      .finally(() => {
+        form.reset();
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Mensagem enviada! Entraremos em contato em breve.';
+          setTimeout(() => {
+            submitBtn.innerHTML = submitBtnDefaultHTML;
+          }, 4000);
+        }
+      });
   });
 }
 
