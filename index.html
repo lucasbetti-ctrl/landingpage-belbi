@@ -9,6 +9,33 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18356943427"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18356943427');
+  </script>
+
+  <!-- Event snippet for Contato conversion page -->
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-18356943427/n5zECP3MmtgcEMP0orFE',
+          'value': 1.0,
+          'currency': 'BRL',
+          'event_callback': callback
+      });
+      return false;
+    }
+  </script>
 </head>
 <body>
   <a href="#hero" class="skip-link">Ir para o conteúdo principal</a>
@@ -26,7 +53,7 @@
           <a href="#o-que-desenvolvemos">Soluções</a>
           <a href="#sobre">A Belbi</a>
         </nav>
-        <a href="https://wa.me/5511979683347?text=Ol%C3%A1%21%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Belbi." class="btn btn--green nav__cta" target="_blank" rel="noopener">
+        <a href="https://wa.me/5511979683347?text=Ol%C3%A1%21%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Belbi." class="btn btn--green nav__cta" onclick="gtag_report_conversion();" target="_blank" rel="noopener">
           Agendar uma conversa
         </a>
         <button class="nav__burger" id="navBurger" aria-label="Abrir menu">
@@ -38,7 +65,7 @@
         <a href="#metodo" class="nav__mobile-link">Método</a>
         <a href="#o-que-desenvolvemos" class="nav__mobile-link">Soluções</a>
         <a href="#sobre" class="nav__mobile-link">A Belbi</a>
-        <a href="https://wa.me/5511979683347?text=Ol%C3%A1%21%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Belbi." class="btn btn--green nav__mobile-cta" target="_blank" rel="noopener">
+        <a href="https://wa.me/5511979683347?text=Ol%C3%A1%21%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Belbi." class="btn btn--green nav__mobile-cta" onclick="gtag_report_conversion();" target="_blank" rel="noopener">
           Agendar uma conversa
         </a>
       </div>
@@ -56,7 +83,7 @@
           Compreendemos a realidade de cada organização para construir jornadas que conectem pessoas, liderança, cultura e estratégia.
         </p>
         <div class="hero__actions">
-          <a href="https://wa.me/5511979683347?text=Ol%C3%A1%21%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Belbi." class="btn btn--green btn--lg" target="_blank" rel="noopener">
+          <a href="https://wa.me/5511979683347?text=Ol%C3%A1%21%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Belbi." class="btn btn--green btn--lg" onclick="gtag_report_conversion();" target="_blank" rel="noopener">
             Agendar uma conversa
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
@@ -308,7 +335,7 @@
 
       <!-- CTA -->
       <div class="diffs__cta">
-        <a href="https://wa.me/5511979683347?text=Ol%C3%A1%21%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Belbi." class="btn btn--green btn--lg" target="_blank" rel="noopener">
+        <a href="https://wa.me/5511979683347?text=Ol%C3%A1%21%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Belbi." class="btn btn--green btn--lg" onclick="gtag_report_conversion();" target="_blank" rel="noopener">
           Quero conhecer a jornada
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
@@ -468,7 +495,7 @@
           </p>
           <div class="form-section__whatsapp">
             <p>Ou fale direto pelo WhatsApp:</p>
-            <a href="https://wa.me/5511979683347?text=Ol%C3%A1%21%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Belbi." class="btn btn--green" target="_blank" rel="noopener">
+            <a href="https://wa.me/5511979683347?text=Ol%C3%A1%21%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Belbi." class="btn btn--green" onclick="gtag_report_conversion();" target="_blank" rel="noopener">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
               Falar pelo WhatsApp
             </a>
@@ -521,7 +548,7 @@
         <!-- COLUNA DIREITA -->
         <div class="final-cta__right">
           <div class="final-cta__card">
-            <a href="https://wa.me/5511979683347?text=Ol%C3%A1%21%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Belbi." class="btn btn--green btn--lg final-cta__btn" target="_blank" rel="noopener" aria-label="Agendar uma conversa com a Belbi">
+            <a href="https://wa.me/5511979683347?text=Ol%C3%A1%21%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Belbi." class="btn btn--green btn--lg final-cta__btn" onclick="gtag_report_conversion();" target="_blank" rel="noopener" aria-label="Agendar uma conversa com a Belbi">
               Agendar uma conversa
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
@@ -537,7 +564,7 @@
   </section>
 
   <!-- WHATSAPP FLOAT -->
-  <a href="https://wa.me/5511979683347?text=Ol%C3%A1%21%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Belbi." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp">
+  <a href="https://wa.me/5511979683347?text=Ol%C3%A1%21%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Belbi." class="whatsapp-float" onclick="gtag_report_conversion();" target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp">
     <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
     <span class="whatsapp-float__tooltip">Falar pelo WhatsApp</span>
   </a>
