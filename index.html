@@ -296,138 +296,151 @@
 
   <!-- NOSSAS JORNADAS -->
   <section class="diffs" id="o-que-desenvolvemos">
-    <div class="container">
+    <div class="container container--wide">
 
-      <!-- Cabeçalho da seção -->
-      <div class="diffs__header">
-        <div class="diffs__header-left">
-          <span class="section-tag">Soluções construídas com a organização</span>
-          <h2 class="diffs__header-title">Primeiro compreendemos.<br>Depois desenvolvemos.</h2>
-          <p class="diffs__header-desc">Antes de definir treinamentos, a Belbi escuta, observa e compreende a realidade da organização. A partir do diagnóstico, construímos jornadas personalizadas, conectadas aos desafios, à cultura e aos objetivos do negócio.</p>
+      <!-- Cabeçalho da seção + Diagnóstico -->
+      <div class="solutions__intro">
+        <div class="solutions__intro-text">
+          <span class="solutions__eyebrow">Portfólio Belbi</span>
+          <h2>Nossas soluções</h2>
+          <p>Desenvolvimento construído a partir da realidade de cada pessoa e organização.</p>
         </div>
-        <div class="diffs__header-right">
-          <div class="diffs__callout">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 8v4"/><circle cx="12" cy="16" r="0.5" fill="currentColor"/></svg>
-            <p>Cada jornada é desenhada conforme o momento da liderança e as necessidades reais da organização — do diagnóstico à ação.</p>
+
+        <!-- DIAGNÓSTICO -->
+        <article class="solutions__diagnostic fade-in">
+          <div class="solutions__diagnostic-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4" width="14" height="18" rx="2"/><path d="M9.5 4v-.5a2.5 2.5 0 0 1 5 0V4M9 10h6M9 14h6M9 18h3"/><circle cx="18.5" cy="18.5" r="3.5"/><path d="m21.8 21.8 2 2"/></svg>
           </div>
-        </div>
+          <div class="solutions__diagnostic-body">
+            <h3>Diagnóstico organizacional</h3>
+            <p>Compreendemos o contexto, as necessidades e as prioridades da organização antes de construir qualquer jornada de desenvolvimento.</p>
+          </div>
+          <button class="btn btn--outline-purple" type="button" data-service="diagnostico">Entender a abordagem</button>
+        </article>
       </div>
 
-      <!-- 3 cards principais -->
-      <div class="diffs__grid diffs__grid--3">
+      <!-- PARA VOCÊ / PARA EMPRESAS -->
+      <div class="solutions__panels">
 
-        <!-- Card 1: Organização -->
-        <div class="diffs__item fade-in">
-          <div class="diffs__icon" aria-hidden="true">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="13" width="4" height="8" rx="1"/><rect x="9" y="8" width="4" height="13" rx="1"/><rect x="16" y="4" width="4" height="17" rx="1"/></svg>
-          </div>
-          <span class="diffs__category">Compreender para direcionar</span>
-          <h3 class="diffs__title">Organização</h3>
-          <p class="diffs__direction">Diagnóstico para decisões mais coerentes</p>
-          <ul class="diffs__bullets">
-            <li><strong>Diagnóstico organizacional</strong></li>
-            <li><strong>NR-1 e riscos psicossociais</strong></li>
-          </ul>
-          <div class="diffs__footer">
-            Clareza para construir ações coerentes com a realidade e, a partir desse diagnóstico, desenvolver caminhos mais consistentes.
-          </div>
-        </div>
+        <section class="solutions__panel" aria-labelledby="titulo-para-voce">
+          <h3 class="solutions__panel-title" id="titulo-para-voce">
+            <span class="solutions__panel-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="7" r="4"/><path d="M5 21v-2a7 7 0 0 1 14 0v2"/></svg></span>
+            Soluções para você
+          </h3>
 
-        <!-- Card 2: Liderança -->
-        <div class="diffs__item fade-in">
-          <div class="diffs__icon" aria-hidden="true">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 0 1 4-4h4"/><polyline points="16 3 20 3 20 7"/><path d="M14 9l6-6"/></svg>
-          </div>
-          <span class="diffs__category">Desenvolver para desafios reais</span>
-          <h3 class="diffs__title">Liderança</h3>
-          <p class="diffs__direction">Preparação e desenvolvimento na prática</p>
-          <ul class="diffs__bullets">
-            <li><strong>Preparação de futuros líderes</strong></li>
-            <li><strong>Desenvolvimento da primeira liderança</strong></li>
-          </ul>
-          <div class="leadership-accordion">
-            <button
-              class="leadership-accordion__trigger"
-              type="button"
-              aria-expanded="false"
-              aria-controls="leadership-topics"
-            >
-              <span>Ver temas que podem compor a jornada</span>
-              <svg class="leadership-accordion__icon" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          <div class="solutions__grid solutions__grid--person fade-in">
+            <button class="solutions__card" type="button" data-service="futuros-pf">
+              <span class="solutions__card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22V12"/><path d="M12 12c-4 0-7-2.5-7-6 4 0 7 2.5 7 6Z"/><path d="M12 15c4 0 7-2.5 7-6-4 0-7 2.5-7 6Z"/></svg></span>
+              <h4>Futuros líderes</h4>
+              <p>Preparação antes da primeira gestão.</p>
+              <span class="solutions__card-link">Conheça esta solução →</span>
             </button>
-            <div
-              id="leadership-topics"
-              class="leadership-accordion__content"
-              hidden
-            >
-              <ul>
-                <li>Autoconhecimento e identidade de liderança</li>
-                <li>Comunicação, escuta e posicionamento</li>
-                <li>Feedback e desenvolvimento de pessoas</li>
-                <li>Conflitos e conversas difíceis</li>
-                <li>Delegação, acompanhamento e resultados</li>
-                <li>Gestão de pessoas na prática</li>
-              </ul>
-              <p>Os temas são definidos e adaptados a partir da realidade e dos desafios de cada organização.</p>
+
+            <button class="solutions__card" type="button" data-service="primeira-pf">
+              <span class="solutions__card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="7" r="4"/><path d="M2 21v-2a7 7 0 0 1 11-5.7"/><path d="m18 14 .9 1.9 2.1.3-1.5 1.5.4 2.1-1.9-1-1.9 1 .4-2.1-1.5-1.5 2.1-.3L18 14Z"/></svg></span>
+              <h4>Primeira liderança</h4>
+              <p>Apoio para os primeiros anos na função.</p>
+              <span class="solutions__card-link">Conheça esta solução →</span>
+            </button>
+
+            <button class="solutions__card" type="button" data-service="mentoria-pf">
+              <span class="solutions__card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3v-7a4 4 0 0 1 0-8h2"/><path d="M8 3h9a4 4 0 0 1 0 8h-1l-4 3v-3H8a4 4 0 0 1 0-8Z"/></svg></span>
+              <h4>Mentorias</h4>
+              <p>Acompanhamento individual para desafios reais.</p>
+              <span class="solutions__card-link">Conheça esta solução →</span>
+            </button>
+          </div>
+        </section>
+
+        <section class="solutions__panel solutions__panel--companies" aria-labelledby="titulo-para-empresas">
+          <h3 class="solutions__panel-title solutions__panel-title--blue" id="titulo-para-empresas">
+            <span class="solutions__panel-icon solutions__panel-icon--blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V4h8v3M3 12h18M10 12v2h4v-2"/></svg></span>
+            Soluções para empresas
+          </h3>
+
+          <div class="solutions__company-groups">
+            <div class="solutions__company-group">
+              <h4 class="solutions__group-title">Desenvolvimento de lideranças</h4>
+              <div class="solutions__grid solutions__grid--leadership fade-in">
+                <button class="solutions__card solutions__card--compact" type="button" data-service="futuros-pj">
+                  <span class="solutions__card-icon solutions__card-icon--sm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20v-2a6 6 0 0 1 12 0v2M14 20v-1a5 5 0 0 1 7-4.6"/></svg></span>
+                  <span class="solutions__card-text"><h4>Futuros líderes</h4><p>Pipeline, sucessão e prontidão para liderar.</p></span>
+                  <span class="solutions__card-arrow" aria-hidden="true">→</span>
+                </button>
+
+                <button class="solutions__card solutions__card--compact" type="button" data-service="primeira-pj">
+                  <span class="solutions__card-icon solutions__card-icon--sm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="8" r="3"/><path d="M3 21v-2a5 5 0 0 1 10 0v2M14 4h7v6h-7zM17.5 10v5"/></svg></span>
+                  <span class="solutions__card-text"><h4>Primeira liderança</h4><p>Jornada para novos gestores e equipes.</p></span>
+                  <span class="solutions__card-arrow" aria-hidden="true">→</span>
+                </button>
+
+                <button class="solutions__card solutions__card--compact" type="button" data-service="lideres-lideres">
+                  <span class="solutions__card-icon solutions__card-icon--sm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="6" r="3"/><circle cx="5" cy="10" r="2.5"/><circle cx="19" cy="10" r="2.5"/><path d="M7 21v-2a5 5 0 0 1 10 0v2M1 21v-1a4 4 0 0 1 6-3.5M23 21v-1a4 4 0 0 0-6-3.5"/><path d="M12 14c1.4-1.7 3.2-2.6 5.5-2.6"/></svg></span>
+                  <span class="solutions__card-text"><h4>Líderes de líderes</h4><p>Condução de outras lideranças e orientação responsável diante de situações de saúde mental.</p></span>
+                  <span class="solutions__card-arrow" aria-hidden="true">→</span>
+                </button>
+
+                <button class="solutions__card solutions__card--compact" type="button" data-service="mentoria-pj">
+                  <span class="solutions__card-icon solutions__card-icon--sm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.4l6.1-.9L12 3Z"/></svg></span>
+                  <span class="solutions__card-text"><h4>Mentorias para lideranças</h4><p>Acompanhamento para sustentar a prática e apoiar desafios reais.</p></span>
+                  <span class="solutions__card-arrow" aria-hidden="true">→</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="solutions__company-group solutions__company-group--health">
+              <h4 class="solutions__group-title solutions__group-title--green">Saúde mental e cultura</h4>
+              <div class="solutions__grid solutions__grid--health fade-in">
+                <button class="solutions__card solutions__card--compact solutions__card--health" type="button" data-service="nr1">
+                  <span class="solutions__card-icon solutions__card-icon--sm solutions__card-icon--green" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3 20 6v5c0 5-3.4 8.8-8 10-4.6-1.2-8-5-8-10V6l8-3Z"/><path d="m9 12 2 2 4-5"/></svg></span>
+                  <span class="solutions__card-text"><h4>NR-1 e riscos psicossociais</h4><p>Mapeamento, aplicação de instrumentos, análise dos fatores de risco e apoio à construção do plano de ação.</p></span>
+                  <span class="solutions__card-arrow solutions__card-arrow--green" aria-hidden="true">→</span>
+                </button>
+
+                <button class="solutions__card solutions__card--compact solutions__card--health" type="button" data-service="rodas">
+                  <span class="solutions__card-icon solutions__card-icon--sm solutions__card-icon--green" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><path d="M2 21v-2a6 6 0 0 1 12 0v2M10 21v-2a6 6 0 0 1 12 0v2"/></svg></span>
+                  <span class="solutions__card-text"><h4>Rodas de conversa</h4><p>Encontros únicos ou ciclos recorrentes para sensibilização, diálogo e aplicação prática com times e lideranças.</p></span>
+                  <span class="solutions__card-arrow solutions__card-arrow--green" aria-hidden="true">→</span>
+                </button>
+
+                <button class="solutions__card solutions__card--compact solutions__card--health" type="button" data-service="palestras">
+                  <span class="solutions__card-icon solutions__card-icon--sm solutions__card-icon--green" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 13h3l9 5V6l-9 5H4v2Z"/><path d="M7 13v6h4l1-3M19 9c1 1 1 5 0 6"/></svg></span>
+                  <span class="solutions__card-text"><h4>Palestras e campanhas</h4><p>Conteúdos personalizados para SIPAT, Janeiro Branco, Setembro Amarelo e outras necessidades da organização.</p></span>
+                  <span class="solutions__card-arrow solutions__card-arrow--green" aria-hidden="true">→</span>
+                </button>
+              </div>
             </div>
           </div>
-          <div class="diffs__footer">
-            <strong>Público:</strong> Para empresas que querem desenvolver suas equipes ou para quem busca crescer para uma posição de liderança.<br>
-            <strong>Formato:</strong> Presencial ou online.
-          </div>
-        </div>
-
-        <!-- Card 3: Mentorias -->
-        <div class="diffs__item fade-in">
-          <div class="diffs__icon" aria-hidden="true">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          </div>
-          <span class="diffs__category">Sustentar para transformar</span>
-          <h3 class="diffs__title">Mentorias</h3>
-          <p class="diffs__direction">Acompanhamento que sustenta a mudança</p>
-          <ul class="diffs__bullets">
-            <li><strong>Mentorias individuais para líderes</strong></li>
-            <li><strong>Sustentação após diagnóstico organizacional</strong></li>
-          </ul>
-          <div class="diffs__footer">
-            Um espaço de acompanhamento para fortalecer decisões, aplicar aprendizados e sustentar mudanças na rotina.<br>
-            <strong>Formato:</strong> Presencial ou online.
-          </div>
-        </div>
+        </section>
 
       </div>
 
-      <!-- Card transversal: Saúde mental -->
-      <div class="diffs__item diffs__item--highlight fade-in">
-        <div class="diffs__highlight-inner">
-          <div class="diffs__highlight-left">
-            <div class="diffs__icon diffs__icon--lg" aria-hidden="true">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M8.5 11.5a2 2 0 0 1 3 0 2 2 0 0 1 3 0c0 2-3 4-3 4s-3-2-3-4z"/></svg>
-            </div>
-          </div>
-          <div class="diffs__highlight-right">
-            <span class="diffs__badge">Presente nas três frentes</span>
-            <h3 class="diffs__title">Saúde mental no trabalho</h3>
-            <p class="diffs__direction">Ampliar o diálogo e fortalecer o cuidado</p>
-            <p class="diffs__desc">Conectamos saúde mental, relações e processos para contribuir com ambientes mais saudáveis e resultados sustentáveis.</p>
-            <ul class="diffs__bullets">
-              <li><strong>Palestras sobre saúde mental</strong></li>
-              <li><strong>Workshops</strong></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- CTA -->
-      <div class="diffs__cta">
-        <a href="https://wa.me/5511979683347?text=Ol%C3%A1%21%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Belbi." class="btn btn--green btn--lg" onclick="return gtag_report_conversion('https://wa.me/5511979683347?text=Ol%C3%A1%21%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Belbi.');" target="_blank" rel="noopener">
-          Quero conhecer a jornada
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-      </div>
+      <!-- Nota de rodapé -->
+      <aside class="solutions__note">
+        <span class="solutions__panel-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20V10M9 20V4M14 20v-7M19 20V7"/><path d="M2 20h20"/></svg>
+        </span>
+        <span>Todos os projetos podem combinar diagnóstico, construção da jornada, desenvolvimento, acompanhamento e sustentação.</span>
+      </aside>
 
     </div>
   </section>
+
+  <!-- MODAL: Detalhes da solução -->
+  <div class="solutions-modal-backdrop" id="solutionsModalBackdrop" role="dialog" aria-modal="true" aria-labelledby="solutionsModalTitle">
+    <section class="solutions-modal">
+      <header class="solutions-modal__header">
+        <div>
+          <p class="solutions-modal__kicker" id="solutionsModalKicker">Solução Belbi</p>
+          <h3 id="solutionsModalTitle">Rodas de conversa</h3>
+        </div>
+        <button class="solutions-modal__close" id="solutionsModalClose" type="button" aria-label="Fechar">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </header>
+      <div class="solutions-modal__body" id="solutionsModalBody"></div>
+    </section>
+  </div>
 
   <!-- NR-1 E RISCOS PSICOSSOCIAIS -->
   <section class="nr1" id="nr1">
